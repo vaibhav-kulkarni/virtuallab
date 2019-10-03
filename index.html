@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JSGraphics</title>
+  </head>
+  <body>
+    <canvas id="myApp" tabindex="0" width="640" height="480"></canvas>
+  </body>
+  <script src="bgiemu.js"></script>
+  <script src="myapp.js"></script>
+  <script>
+  let context = createBgiContext(document.getElementById("myApp"));
+  context.run(myApp(context));
+  </script>
+</html>
